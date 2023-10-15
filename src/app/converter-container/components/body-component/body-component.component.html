@@ -1,0 +1,27 @@
+<div class="main-body-container">
+
+  <div class="left-side">
+    <div class="form-control">
+      <input class="custom-input" type="number" [(ngModel)]="firstAmountValue" (change)="calc()">
+    </div>
+
+    <div class="form-control">
+      <select class="custom-select" [(ngModel)]="selectedOptionFromFirstSelect" (ngModelChange)="calc()">
+        <option *ngFor="let el of data" [ngValue]="el">{{el.name}} - {{el.currency}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="right-side">
+    <div class="form-control">
+      <input class="custom-input" type="number" [(ngModel)]="secondAmountValue" (change)="calc()">
+    </div>
+
+    <div class="form-control">
+      <select class="custom-select" [(ngModel)]="selectedOptionFromSecondSelect" (ngModelChange)="calc()">
+        <option *ngFor="let el of data" [ngValue]="el">{{el.name}} - {{el.currency}}</option>
+      </select>
+    </div>
+  </div>
+
+</div>

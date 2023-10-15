@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+}
+.main-body-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .left-side, .right-side {
+    display: flex;
+
+
+    .custom-select {
+      width: 250px;
+      height: 40px;
+      padding: 4px;
+      background-color: #23242a;
+      color: lightgray;
+      outline: none;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+    }
+
+    .custom-input {
+      border: 1px solid lightgray;
+      margin-right: 5px;
+      outline: none;
+      width: 100px;
+      height: 40px;
+      padding: 4px 7px;
+      background-color: #23242a;
+      color: lightgray;
+      border-radius: 5px;
+
+    }
+  }
+}
